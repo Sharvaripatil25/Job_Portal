@@ -1,5 +1,5 @@
-const Job     = require('../models/Job')
-const Company = require('../models/Company')
+const Job     = require('../models/job')
+const Company = require('../models/company')
 
 // GET /api/jobs  — public with filters + pagination
 exports.getJobs = async (req, res, next) => {
