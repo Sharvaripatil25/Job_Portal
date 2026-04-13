@@ -1,5 +1,5 @@
-const Application = require('../models/Application')
-const Job         = require('../models/Job')
+const Application = require('../models/application')
+const Job         = require('../models/job')
 
 // POST /api/applications/:jobId/apply  — seeker
 exports.applyToJob = async (req, res, next) => {

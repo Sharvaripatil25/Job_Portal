@@ -1,5 +1,5 @@
-const User          = require('../models/User')
-const Company       = require('../models/Company')
+const User          = require('../models/user')
+const Company       = require('../models/company')
 const generateToken = require('../utils/generateToken')
 
 // POST /api/auth/register
