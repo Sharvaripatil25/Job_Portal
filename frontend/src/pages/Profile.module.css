@@ -1,0 +1,16 @@
+.layout { display: grid; grid-template-columns: 240px 1fr; gap: 28px; align-items: start; }
+
+.avatarCard { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; text-align: center; position: sticky; top: 80px; }
+.avatarCircle { width: 80px; height: 80px; background: var(--ink); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 2rem; margin: 0 auto 16px; }
+.avatarCard h3 { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 4px; }
+.avatarCard p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px; }
+.roleBadge { text-transform: capitalize; }
+
+.form { display: flex; flex-direction: column; gap: 0; }
+.section { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px; }
+.sectionTitle { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.skillPreview { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.actions { display: flex; justify-content: flex-end; }
+
+@media (max-width: 768px) { .layout { grid-template-columns: 1fr; } .avatarCard { position: static; } .grid2 { grid-template-columns: 1fr; } }

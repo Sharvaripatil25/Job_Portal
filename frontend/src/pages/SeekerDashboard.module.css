@@ -1,0 +1,35 @@
+.statsGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 36px; }
+.statCard { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 20px; display: flex; flex-direction: column; gap: 6px; transition: var(--transition); }
+.statCard:hover { box-shadow: var(--shadow-md); border-color: var(--border-dark); }
+.statIcon { font-size: 1.2rem; }
+.statVal { font-family: var(--font-serif); font-size: 2rem; color: var(--text-primary); line-height: 1; }
+.statLabel { font-size: 0.8rem; color: var(--text-muted); }
+
+.section {}
+.sectionHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.sectionHeader h2 { font-family: var(--font-serif); font-size: 1.4rem; }
+
+.appList { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: #fff; }
+.appRow { display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-bottom: 1px solid var(--border); transition: var(--transition); flex-wrap: wrap; }
+.appRow:last-child { border-bottom: none; }
+.appRow:hover { background: var(--paper-2); }
+
+.appLogo { width: 40px; height: 40px; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; display: flex; align-items: center; justify-content: center; background: var(--paper-2); }
+.appLogo img { width: 100%; height: 100%; object-fit: cover; }
+.appLogo span { font-family: var(--font-serif); font-size: 1rem; color: var(--text-secondary); }
+
+.appInfo { flex: 1; min-width: 0; }
+.appTitle { font-size: 0.95rem; font-weight: 500; color: var(--text-primary); text-decoration: none; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.appTitle:hover { text-decoration: underline; text-underline-offset: 3px; }
+.appCompany { font-size: 0.8rem; color: var(--text-muted); }
+
+.coverLetterDetails { width: 100%; }
+.coverLetterDetails summary { font-size: 0.8rem; color: var(--text-muted); cursor: pointer; }
+.coverLetterText { font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px; padding: 12px; background: var(--paper-2); border-radius: var(--radius-md); line-height: 1.6; }
+
+.loadingList { display: flex; flex-direction: column; gap: 12px; }
+.skelRow { height: 72px; background: var(--paper-2); border-radius: var(--radius-lg); animation: shimmer 1.4s ease infinite; }
+
+@keyframes shimmer { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+@media (max-width: 768px) { .statsGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .statsGrid { grid-template-columns: 1fr 1fr; } }

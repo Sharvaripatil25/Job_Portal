@@ -1,0 +1,40 @@
+.footer {
+  background: var(--ink);
+  color: var(--paper);
+  margin-top: auto;
+}
+
+.inner {
+  display: flex; gap: 64px; padding-top: 48px; padding-bottom: 48px;
+  align-items: flex-start;
+}
+
+.brand { flex-shrink: 0; }
+
+.logo { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.logoMark {
+  width: 32px; height: 32px; background: var(--gold);
+  color: var(--ink); border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-serif); font-size: 1.1rem; font-style: italic;
+}
+.logoText { font-family: var(--font-serif); font-size: 1.25rem; color: var(--paper); }
+.tagline { font-size: 0.85rem; color: rgba(245,242,236,0.5); }
+
+.links { display: flex; gap: 48px; flex-wrap: wrap; }
+.linkGroup { display: flex; flex-direction: column; gap: 10px; }
+.groupTitle { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(245,242,236,0.4); margin-bottom: 4px; }
+.linkGroup a { font-size: 0.88rem; color: rgba(245,242,236,0.7); text-decoration: none; transition: var(--transition); }
+.linkGroup a:hover { color: var(--paper); }
+
+.bottom {
+  border-top: 1px solid rgba(245,242,236,0.1);
+  padding: 16px 24px;
+  text-align: center;
+}
+.bottom p { font-size: 0.78rem; color: rgba(245,242,236,0.35); }
+
+@media (max-width: 768px) {
+  .inner { flex-direction: column; gap: 32px; }
+  .links { gap: 28px; }
+}

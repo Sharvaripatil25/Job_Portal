@@ -1,0 +1,58 @@
+.page {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--paper-2);
+  padding: 40px 16px;
+}
+
+.card {
+  width: 100%; max-width: 420px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+  animation: fadeUp 0.4s ease forwards;
+}
+
+.header { text-align: center; margin-bottom: 32px; }
+
+.logo { display: inline-block; margin-bottom: 20px; }
+.logoMark {
+  width: 48px; height: 48px;
+  background: var(--ink); color: var(--gold);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-serif); font-size: 1.4rem; font-style: italic;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem; margin-bottom: 6px;
+  color: var(--text-primary);
+}
+.sub { font-size: 0.9rem; color: var(--text-muted); }
+
+.form { display: flex; flex-direction: column; gap: 18px; margin-bottom: 24px; }
+
+.submitBtn { width: 100%; justify-content: center; padding: 13px; font-size: 0.95rem; }
+
+.roleToggle { display: flex; gap: 8px; }
+.roleBtn {
+  flex: 1; padding: 10px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem; font-weight: 500;
+  color: var(--text-secondary);
+  background: #fff; cursor: pointer;
+  transition: var(--transition);
+}
+.roleBtn:hover { border-color: var(--border-dark); }
+.roleActive { border-color: var(--ink) !important; background: var(--paper-2) !important; color: var(--text-primary) !important; }
+
+.switch { text-align: center; font-size: 0.88rem; color: var(--text-muted); }
+.switch a { color: var(--text-primary); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+.switch a:hover { color: var(--gold); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
