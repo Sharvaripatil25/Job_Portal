@@ -1,58 +1,42 @@
 .page {
-  min-height: 100vh;
-  display: flex; align-items: center; justify-content: center;
-  background: var(--paper-2);
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--blue-50) 0%, white 60%);
   padding: 40px 16px;
 }
-
 .card {
   width: 100%; max-width: 420px;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
-  padding: 40px;
-  box-shadow: var(--shadow-lg);
+  background: white; border: 1px solid var(--blue-100);
+  border-radius: var(--radius-xl); padding: 40px;
+  box-shadow: 0 8px 40px rgba(37,99,235,0.1);
   animation: fadeUp 0.4s ease forwards;
 }
-
 .header { text-align: center; margin-bottom: 32px; }
-
-.logo { display: inline-block; margin-bottom: 20px; }
+.logo   { display: inline-block; margin-bottom: 20px; }
 .logoMark {
-  width: 48px; height: 48px;
-  background: var(--ink); color: var(--gold);
-  border-radius: 14px;
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  color: white; border-radius: 16px;
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-serif); font-size: 1.4rem; font-style: italic;
-  margin: 0 auto;
+  font-family: var(--font-serif); font-size: 1.5rem; font-style: italic;
+  margin: 0 auto; box-shadow: 0 4px 16px rgba(37,99,235,0.3);
 }
-
-.title {
-  font-family: var(--font-serif);
-  font-size: 1.8rem; margin-bottom: 6px;
-  color: var(--text-primary);
-}
-.sub { font-size: 0.9rem; color: var(--text-muted); }
+.title { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 6px; color: var(--text-primary); }
+.sub   { font-size: 0.9rem; color: var(--text-muted); }
 
 .form { display: flex; flex-direction: column; gap: 18px; margin-bottom: 24px; }
-
 .submitBtn { width: 100%; justify-content: center; padding: 13px; font-size: 0.95rem; }
 
 .roleToggle { display: flex; gap: 8px; }
 .roleBtn {
   flex: 1; padding: 10px;
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-md);
-  font-size: 0.88rem; font-weight: 500;
-  color: var(--text-secondary);
-  background: #fff; cursor: pointer;
-  transition: var(--transition);
+  border: 2px solid var(--border); border-radius: var(--radius-md);
+  font-size: 0.88rem; font-weight: 600; color: var(--text-secondary);
+  background: white; cursor: pointer; transition: var(--transition); font-family: var(--font-sans);
 }
-.roleBtn:hover { border-color: var(--border-dark); }
-.roleActive { border-color: var(--ink) !important; background: var(--paper-2) !important; color: var(--text-primary) !important; }
+.roleBtn:hover  { border-color: var(--blue-300); color: var(--accent); }
+.roleActive     { border-color: var(--accent) !important; background: var(--blue-50) !important; color: var(--accent) !important; }
 
 .switch { text-align: center; font-size: 0.88rem; color: var(--text-muted); }
-.switch a { color: var(--text-primary); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
-.switch a:hover { color: var(--gold); }
+.switch a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }

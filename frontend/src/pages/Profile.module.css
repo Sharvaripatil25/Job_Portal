@@ -1,14 +1,13 @@
 .layout { display: grid; grid-template-columns: 240px 1fr; gap: 28px; align-items: start; }
-
-.avatarCard { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; text-align: center; position: sticky; top: 80px; }
-.avatarCircle { width: 80px; height: 80px; background: var(--ink); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 2rem; margin: 0 auto 16px; }
+.avatarCard { background: white; border: 1.5px solid var(--blue-100); border-radius: var(--radius-lg); padding: 28px; text-align: center; position: sticky; top: 80px; }
+.avatarCircle { width: 80px; height: 80px; background: linear-gradient(135deg, #1d4ed8, #60a5fa); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 2rem; font-weight: 600; margin: 0 auto 16px; box-shadow: var(--shadow-blue); }
 .avatarCard h3 { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 4px; }
-.avatarCard p { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px; }
+.avatarCard p  { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 12px; }
 .roleBadge { text-transform: capitalize; }
 
 .form { display: flex; flex-direction: column; gap: 0; }
-.section { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px; }
-.sectionTitle { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.section { background: white; border: 1.5px solid var(--blue-100); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px; }
+.sectionTitle { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--blue-100); }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .skillPreview { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .actions { display: flex; justify-content: flex-end; }

@@ -1,56 +1,51 @@
-.back { color: var(--text-muted); font-size: 0.85rem; cursor: pointer; margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px; transition: var(--transition); background: none; border: none; }
-.back:hover { color: var(--text-primary); }
+.back { color: var(--accent); font-size: 0.85rem; cursor: pointer; margin-bottom: 24px; display: inline-flex; align-items: center; gap: 6px; transition: var(--transition); background: none; border: none; font-weight: 500; }
+.back:hover { color: var(--blue-700); }
 
-.layout { display: grid; grid-template-columns: 1fr 320px; gap: 32px; align-items: start; }
+.layout { display: grid; grid-template-columns: 1fr 310px; gap: 32px; align-items: start; }
 
-.main { display: flex; flex-direction: column; gap: 0; }
-
+.main { display: flex; flex-direction: column; }
 .jobHeader { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
-.companyLogo { width: 64px; height: 64px; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; display: flex; align-items: center; justify-content: center; background: var(--paper-2); }
-.companyLogo img { width: 100%; height: 100%; object-fit: cover; }
-.companyLogo span { font-family: var(--font-serif); font-size: 1.5rem; color: var(--text-secondary); }
-.companyName { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; }
-.jobTitle { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 10px; }
-.jobMeta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-.metaItem { display: flex; align-items: center; gap: 5px; font-size: 0.85rem; color: var(--text-secondary); }
+.companyLogo { width: 64px; height: 64px; flex-shrink: 0; border: 2px solid var(--blue-100); border-radius: var(--radius-lg); overflow: hidden; display: flex; align-items: center; justify-content: center; background: var(--blue-50); }
+.companyLogo img  { width: 100%; height: 100%; object-fit: cover; }
+.companyLogo span { font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent); font-weight: 600; }
+.companyName { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
+.jobTitle    { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 10px; }
+.jobMeta     { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.metaItem    { display: flex; align-items: center; gap: 5px; font-size: 0.85rem; color: var(--text-secondary); }
 
-.section { margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
-.section h3 { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 12px; }
-.skillTags { display: flex; flex-wrap: wrap; gap: 8px; }
-.description { font-size: 0.95rem; line-height: 1.75; color: var(--text-secondary); white-space: pre-line; }
+.section    { margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
+.section h3 { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 12px; color: var(--text-primary); }
+.skillTags  { display: flex; flex-wrap: wrap; gap: 8px; }
+.description { font-size: 0.95rem; line-height: 1.78; color: var(--text-secondary); white-space: pre-line; }
 
-.deadlineNote { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-muted); padding: 12px 16px; background: var(--paper-2); border-radius: var(--radius-md); border: 1px solid var(--border); }
+.deadlineNote { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--blue-700); padding: 12px 16px; background: var(--blue-50); border-radius: var(--radius-md); border: 1px solid var(--blue-200); }
 
-/* Sidebar */
 .sidebar { position: sticky; top: 80px; }
-.applyCard { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-sm); }
-.posted { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 4px; }
-.applicantCount { font-size: 0.88rem; color: var(--text-secondary); font-weight: 500; margin-bottom: 16px; }
-.appliedBadge { display: flex; align-items: center; gap: 8px; padding: 12px; background: #4caf6e18; border: 1px solid #4caf6e33; border-radius: var(--radius-md); font-size: 0.88rem; font-weight: 500; color: #2d7a4c; }
-.cardDetails { display: flex; flex-direction: column; gap: 12px; }
-.cardDetail { display: flex; justify-content: space-between; font-size: 0.85rem; }
-.detailLabel { color: var(--text-muted); }
-.detailVal { font-weight: 500; color: var(--text-primary); text-transform: capitalize; }
+.applyCard { background: white; border: 1.5px solid var(--blue-100); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-sm); }
+.posted         { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 4px; }
+.applicantCount { font-size: 0.9rem; color: var(--text-secondary); font-weight: 600; margin-bottom: 16px; }
+.appliedBadge   { display: flex; align-items: center; gap: 8px; padding: 12px; background: #d1fae5; border: 1px solid #a7f3d0; border-radius: var(--radius-md); font-size: 0.88rem; font-weight: 600; color: #065f46; }
+.cardDetails    { display: flex; flex-direction: column; gap: 12px; }
+.cardDetail     { display: flex; justify-content: space-between; font-size: 0.85rem; }
+.detailLabel    { color: var(--text-muted); }
+.detailVal      { font-weight: 600; color: var(--text-primary); text-transform: capitalize; }
 
-/* Modal */
-.overlay { position: fixed; inset: 0; background: rgba(14,13,11,0.5); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 16px; animation: fadeIn 0.2s ease; }
-.modal { background: #fff; border-radius: var(--radius-xl); padding: 28px; width: 100%; max-width: 520px; box-shadow: var(--shadow-lg); animation: fadeUp 0.25s ease; }
-.modalHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.overlay { position: fixed; inset: 0; background: rgba(15,23,42,0.4); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 16px; animation: fadeIn 0.2s ease; }
+.modal   { background: white; border-radius: var(--radius-xl); padding: 28px; width: 100%; max-width: 520px; box-shadow: var(--shadow-lg); animation: fadeUp 0.25s ease; border-top: 4px solid var(--accent); }
+.modalHeader   { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
 .modalHeader h3 { font-family: var(--font-serif); font-size: 1.2rem; }
-.closeBtn { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border); background: none; font-size: 1.1rem; color: var(--text-muted); cursor: pointer; transition: var(--transition); display: flex; align-items: center; justify-content: center; }
-.closeBtn:hover { background: var(--paper-2); color: var(--text-primary); }
-.modalForm { display: flex; flex-direction: column; gap: 16px; }
+.closeBtn { width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--border); background: none; font-size: 1.1rem; color: var(--text-muted); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.closeBtn:hover { background: var(--blue-50); color: var(--accent); border-color: var(--blue-200); }
+.modalForm    { display: flex; flex-direction: column; gap: 16px; }
 .modalActions { display: flex; gap: 10px; justify-content: flex-end; }
 
-/* Skeletons */
 .loadingGrid { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
-.skel { background: var(--paper-2); border-radius: var(--radius-md); animation: shimmer 1.4s ease infinite; }
-.skelH { height: 48px; width: 60%; margin-bottom: 16px; }
-.skelP { height: 14px; width: 80%; margin-bottom: 10px; border-radius: 4px; }
+.skel     { background: var(--blue-50); border-radius: var(--radius-md); animation: shimmer 1.4s ease infinite; }
+.skelH    { height: 48px; width: 60%; margin-bottom: 16px; }
+.skelP    { height: 14px; width: 80%; margin-bottom: 10px; border-radius: 4px; }
 .skelCard { height: 300px; border-radius: var(--radius-lg); }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes shimmer { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
-
 @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .sidebar { position: static; } .loadingGrid { grid-template-columns: 1fr; } }

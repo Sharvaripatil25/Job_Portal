@@ -28,8 +28,8 @@ const STEPS = [
 export default function Home() {
   const [search, setSearch]     = useState('')
   const [location, setLocation] = useState('')
-  const navigate  = useNavigate()
-  const dispatch  = useDispatch()
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   const handleSearch = (e) => {
     e.preventDefault()
@@ -43,18 +43,15 @@ export default function Home() {
       {/* ── Hero ── */}
       <section className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
-
           <div className={styles.heroContent}>
             <div className={styles.eyebrow}>
-              <span className={styles.dot} />
+              <span className={styles.eyebrowDot} />
               Now hiring across 40+ categories
             </div>
-
             <h1 className={styles.heroTitle}>
-              Find work that<br />
-              <em>moves you forward.</em>
+              Find the job that<br />
+              <em>fits your future.</em>
             </h1>
-
             <p className={styles.heroSub}>
               Thousands of roles from companies worth working for.
               Curated, transparent, no noise.
@@ -98,12 +95,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero visual — stacked cards, no absolute positioning */}
+          {/* Hero visual */}
           <div className={styles.heroVisual}>
             <div className={styles.visualCard}>
               <div className={styles.visualHeader}>
                 <div className={styles.visualDots}><span/><span/><span/></div>
-                <span className={styles.visualTitle}>New match</span>
+                <span className={styles.visualBadge}>✨ New match</span>
               </div>
               <div className={styles.jobPreview}>
                 <div className={styles.previewLogo}>S</div>
@@ -120,19 +117,19 @@ export default function Home() {
                 <div className={styles.matchFill} style={{ width: '92%' }} />
               </div>
               <div className={styles.previewTags}>
-                <span className="badge badge-gold">Figma</span>
+                <span className="badge badge-blue">Figma</span>
                 <span className="badge badge-default">Design systems</span>
                 <span className="badge badge-default">React</span>
               </div>
             </div>
-
-            {/* Notification below — no overlap */}
-            <div className={styles.visualCard2}>
-              <p className={styles.notifText}>🎉 Hired today</p>
-              <p className={styles.notifName}>Sneha M. — UX Lead at Razorpay</p>
+            <div className={styles.notifCard}>
+              <span className={styles.notifIcon}>🎉</span>
+              <div>
+                <p className={styles.notifTitle}>Hired today</p>
+                <p className={styles.notifSub}>Sneha M. — UX Lead at Razorpay</p>
+              </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -143,14 +140,8 @@ export default function Home() {
           <p className={styles.sectionSub}>Explore opportunities across every industry</p>
           <div className={styles.categoryGrid}>
             {CATEGORIES.map(cat => (
-              <button
-                key={cat.label}
-                className={styles.categoryCard}
-                onClick={() => {
-                  dispatch(setFilters({ search: cat.label, page: 1 }))
-                  navigate('/jobs')
-                }}
-              >
+              <button key={cat.label} className={styles.categoryCard}
+                onClick={() => { dispatch(setFilters({ search: cat.label, page: 1 })); navigate('/jobs') }}>
                 <span className={styles.categoryIcon}>{cat.icon}</span>
                 <span className={styles.categoryLabel}>{cat.label}</span>
                 <span className={styles.categoryCount}>{cat.count} jobs</span>
@@ -169,8 +160,8 @@ export default function Home() {
             {STEPS.map(s => (
               <div key={s.num} className={styles.step}>
                 <div className={styles.stepNum}>{s.num}</div>
-                <h4>{s.title}</h4>
-                <p>{s.desc}</p>
+                <h4 className={styles.stepTitle}>{s.title}</h4>
+                <p className={styles.stepDesc}>{s.desc}</p>
               </div>
             ))}
           </div>
@@ -186,13 +177,8 @@ export default function Home() {
               <p>Post your roles and reach thousands of qualified candidates today.</p>
             </div>
             <div className={styles.ctaBtns}>
-              <Link to="/register" className="btn btn-gold btn-lg">
-                Post a job
-              </Link>
-              {/* Custom ghost button that's visible on dark bg */}
-              <Link to="/jobs" className={styles.ctaGhostBtn}>
-                Browse talent
-              </Link>
+              <Link to="/register" className="btn btn-primary btn-lg">Post a job</Link>
+              <Link to="/jobs" className="btn btn-outline-white btn-lg">Browse talent</Link>
             </div>
           </div>
         </div>

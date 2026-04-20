@@ -1,40 +1,25 @@
-.footer {
-  background: var(--ink);
-  color: var(--paper);
-  margin-top: auto;
-}
-
-.inner {
-  display: flex; gap: 64px; padding-top: 48px; padding-bottom: 48px;
-  align-items: flex-start;
-}
+.footer { background: var(--gray-900); color: white; margin-top: auto; }
+.inner { display: flex; gap: 64px; padding-top: 48px; padding-bottom: 48px; align-items: flex-start; }
 
 .brand { flex-shrink: 0; }
-
-.logo { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.logo  { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
 .logoMark {
-  width: 32px; height: 32px; background: var(--gold);
-  color: var(--ink); border-radius: 8px;
+  width: 32px; height: 32px;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white; border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-serif); font-size: 1.1rem; font-style: italic;
+  font-family: var(--font-serif); font-size: 1rem; font-style: italic;
 }
-.logoText { font-family: var(--font-serif); font-size: 1.25rem; color: var(--paper); }
-.tagline { font-size: 0.85rem; color: rgba(245,242,236,0.5); }
+.logoText { font-family: var(--font-serif); font-size: 1.2rem; color: white; }
+.tagline  { font-size: 0.83rem; color: var(--gray-500); }
 
 .links { display: flex; gap: 48px; flex-wrap: wrap; }
 .linkGroup { display: flex; flex-direction: column; gap: 10px; }
-.groupTitle { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(245,242,236,0.4); margin-bottom: 4px; }
-.linkGroup a { font-size: 0.88rem; color: rgba(245,242,236,0.7); text-decoration: none; transition: var(--transition); }
-.linkGroup a:hover { color: var(--paper); }
+.groupTitle { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-600); margin-bottom: 4px; }
+.linkGroup a { font-size: 0.87rem; color: var(--gray-400); text-decoration: none; transition: var(--transition); }
+.linkGroup a:hover { color: var(--blue-300); }
 
-.bottom {
-  border-top: 1px solid rgba(245,242,236,0.1);
-  padding: 16px 24px;
-  text-align: center;
-}
-.bottom p { font-size: 0.78rem; color: rgba(245,242,236,0.35); }
+.bottom { border-top: 1px solid var(--gray-800); padding: 16px 24px; text-align: center; }
+.bottom p { font-size: 0.78rem; color: var(--gray-600); }
 
-@media (max-width: 768px) {
-  .inner { flex-direction: column; gap: 32px; }
-  .links { gap: 28px; }
-}
+@media (max-width: 768px) { .inner { flex-direction: column; gap: 32px; } .links { gap: 28px; } }

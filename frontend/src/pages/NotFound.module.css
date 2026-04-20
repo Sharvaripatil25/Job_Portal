@@ -1,6 +1,6 @@
-.page { min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.page  { min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; }
 .inner { max-width: 400px; }
-.code { display: block; font-family: var(--font-serif); font-size: 6rem; color: var(--border-dark); line-height: 1; margin-bottom: 16px; }
+.code  { display: block; font-family: var(--font-serif); font-size: 6rem; color: var(--blue-200); line-height: 1; margin-bottom: 16px; font-weight: 600; }
 .inner h1 { margin-bottom: 10px; }
-.inner p { color: var(--text-muted); margin-bottom: 28px; }
-.actions { display: flex; gap: 12px; justify-content: center; }
+.inner p  { color: var(--text-muted); margin-bottom: 28px; }
+.actions  { display: flex; gap: 12px; justify-content: center; }
